@@ -68,7 +68,7 @@ function mathOperator(arg1, arg2, operator) {
             break;
     }
 }
-console.log(mathOperator(1,5,"сложение"))
+mathOperator(1,5,"сложение")
 
 
 // Задание 6
@@ -108,5 +108,4 @@ function getCountMoneyFromConsole() {
         rl.close();
     });
 }
-
-console.log(getCountMoneyFromConsole())
+getCountMoneyFromConsole();
