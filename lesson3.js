@@ -1,3 +1,5 @@
+"use strict";
+
 // Задание 1
 function ex1() {
     console.log("ЗАДАНИЕ 1 \n"); 
@@ -100,7 +102,7 @@ function ex4() {
         },
     ];
 
-    const productsWithPhoto = products.filter(product => "photos" in product && !!product.photos.length);
+    const productsWithPhoto = products.filter(product => "photos" in product && product.photos.length > 0);
     console.log(`Продукты с фото:`);
     console.log(productsWithPhoto);
     products.sort(function(product1, product2) {
