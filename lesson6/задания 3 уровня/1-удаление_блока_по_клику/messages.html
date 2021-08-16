@@ -44,9 +44,16 @@
     -->
 
     <script>
+        'use strict';
+        
+        const allButtons = document.querySelectorAll('button');
+        allButtons.forEach(function(button) {
+            button.addEventListener('click', closeClickHandler)
+        });
 
         function closeClickHandler(event) {
-           
+            event.currentTarget.parentNode.style.display = 'none';
+            // event.target.closest('div.alert').style.display = 'none'; // второй вариант
         }
     </script>
 </body>

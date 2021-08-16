@@ -41,7 +41,17 @@
     -->
 
     <script>
-        
+        'use strict';
+
+        function addCard() {
+            const goToTopEl = document.querySelectorAll('img');
+            for(let i = 0; i < goToTopEl.length; i++) {
+            goToTopEl[i].src = `images/${i+1}.jpg`;
+            console.log(`images/${i}.png`)
+        }
+        }
+
+        setTimeout(addCard, 3000);
     </script>
 </body>
 </html>
